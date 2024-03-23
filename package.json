@@ -9,26 +9,44 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
-  "main": "./extension.js",
+  "activationEvents": [
+    "onCommand:extension.openScanningWindow"
+  ],
   "contributes": {
-    "commands": [{
-      "command": "karnak.helloWorld",
-      "title": "Hello World"
-    }]
+    "configuration": {
+      "type": "object",
+      "title": "Code Scanning Extension Configuration",
+      "properties": {
+        "codeScanningExtension.openaiApiKey": {
+          "type": "string",
+          "description": "OpenAI API key for code scanning"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "extension.openScanningWindow",
+        "title": "Karnak"
+      }
+    ]
   },
+  "main": "./extension.js",
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.87.0",
     "@types/mocha": "^10.0.6",
     "@types/node": "18.x",
-    "eslint": "^8.56.0",
-    "typescript": "^5.3.3",
+    "@types/vscode": "^1.87.0",
     "@vscode/test-cli": "^0.0.6",
-    "@vscode/test-electron": "^2.3.9"
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  },
+  "repository": "https://github.com/esbenkc/karnak",
+  "dependencies": {
+    "openai": "^4.29.2"
   }
 }
