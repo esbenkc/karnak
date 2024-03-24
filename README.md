@@ -4,6 +4,8 @@
 
 Do you trust AI-based software engineering systems? Karnak is a defense program against obscured injection of malicious code in your own programs from autonomous software engineering systems. You can run it before you push it to your servers to receive an in-depth vulnerability report.
 
+This program is intended to target unintended proliferation risks of autonomous AI agents.
+
 ## Features
 
 - Scans all files in your workspace for vulnerabilities
@@ -22,3 +24,11 @@ Go to the VS Code settings (File > Preferences > Settings or Code > Preferences 
 | `index.html` | No vulnerability                                                                                     |         | TN     |
 
 TODO: Add testing on the [OWASP Benchmark](https://owasp.org/www-project-benchmark/) or other more representative datasets
+
+## Known shortcomings
+
+- Current vulnerability visualization is not conditional on the vulnerability severity
+- Using the same model that has written the code to evaulate the code is subject to multi-instance coordination on deception
+- It currently scans _all files_ in your workspace, which can be solved by adhering to any type of .gitignore file found in the workspace
+- It is computationally expensive to run
+- It currently covers all vulnerabilities and can have improved targeting of AGI proliferation risk
