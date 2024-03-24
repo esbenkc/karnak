@@ -11,6 +11,10 @@ This program is intended to target unintended proliferation risks of autonomous 
 - Scans all files in your workspace for vulnerabilities
 - Provides detailed reports of all vulnerabilities found by type, file, and line
 
+## Demo video
+
+[![KARNAK V0.0.1 DEMONSTRATION](http://img.youtube.com/vi/2D110vKpqWU/0.jpg)](http://www.youtube.com/watch?v=2D110vKpqWU "KARNAK V0.0.1")
+
 ## Set up your OpenAI API key
 
 Go to the VS Code settings (File > Preferences > Settings or Code > Preferences > Settings), search for "codeScanningExtension.openaiApiKey", and enter your API key.
