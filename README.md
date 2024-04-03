@@ -13,7 +13,7 @@ This program is intended to target unintended proliferation risks of autonomous 
 
 ## Demo video
 
-[![KARNAK V0.0.1 DEMONSTRATION](http://img.youtube.com/vi/2D110vKpqWU/0.jpg)](http://www.youtube.com/watch?v=2D110vKpqWU "KARNAK V0.0.1")
+[![KARNAK V0.0.1 DEMONSTRATION](assets/video-tb.png)](http://www.youtube.com/watch?v=2D110vKpqWU "KARNAK V0.0.1")
 
 ## Set up your OpenAI API key
 
